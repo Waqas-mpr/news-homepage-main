@@ -120,7 +120,7 @@ select {
 
 .body-container {
 	padding-block-start: 1em;
-	padding-inline: 1.5em;
+	padding-inline: 1em;
 	margin: auto;
 	max-width: 1440px;
 }
@@ -203,7 +203,7 @@ select {
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
 	.grid {
 		grid-template-areas:
 			"one one one"
