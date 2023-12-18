@@ -249,9 +249,20 @@ select {
 .text-grayish-blue {
 	color: var(--grayish-blue);
 }
-
+.section-padding-block {
+	margin-block-start: 1em;
+}
 .header-section {
 	padding-block-start: 2em;
+}
+.header-aligned {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo > img {
+	max-width: 50px;
 }
 
 .nav-links {
@@ -273,10 +284,6 @@ select {
 
 .d-none {
 	display: none;
-}
-.nav-space-btw {
-	display: flex;
-	justify-content: space-between;
 }
 
 .bright-future-title {
