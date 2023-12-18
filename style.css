@@ -167,6 +167,16 @@ select {
 	}
 }
 
+@media screen and (min-width: 700px) {
+	.bright-future-text-section {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2em;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
 @media screen and (min-width: 900px) {
 	.hero-section {
 		background-image: url(assets/images/image-web-3-mobile.jpg);
@@ -177,13 +187,21 @@ select {
 		height: 350px;
 	}
 
+	.bright-future-text-section {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0.75em;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.bright-future-title {
 		font-size: var(--fs-700);
 		font-weight: var(--fw-700);
 		line-height: 1.25em;
 	}
 	.blog-section {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr 1fr;
 		gap: 2em;
 	}
 
