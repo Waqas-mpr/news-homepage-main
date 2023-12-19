@@ -431,12 +431,13 @@ select {
 		flex-direction: column;
 		--gap: 1.5em;
 		gap: --gap;
-		padding: min(15rem, 20vh) 2rem;
+		padding: 4rem 2rem;
 		margin: 0;
 	}
 
 	.header-section:has(input:checked) .primary-navigation {
 		display: flex;
+		justify-content: center;
 	}
 	.section-padding-block-start {
 		margin-block-start: 0;
