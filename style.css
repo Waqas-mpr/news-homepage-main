@@ -28,6 +28,8 @@
 
 	--section-height: 42rem;
 	--padding-container: 9.5rem;
+
+	--gap: 1em;
 }
 
 /*--------------------------*/
@@ -148,7 +150,7 @@ select {
 .grid {
 	display: grid;
 	grid-auto-columns: 1fr;
-	gap: 2em;
+	gap: var(--gap);
 	align-content: center;
 
 	grid-template-areas:
@@ -202,8 +204,10 @@ select {
 }
 .primary-navigation {
 	display: flex;
-	gap: 3em;
+	--gap: 3em;
+	gap: var(--gap);
 }
+
 .link {
 	list-style: none;
 }
@@ -298,7 +302,8 @@ select {
 .blog-section {
 	display: grid;
 	padding-block-end: 2em;
-	gap: 1em;
+	--gap: 1em;
+	gap: var(--gap);
 }
 .blog {
 	display: flex;
@@ -365,7 +370,7 @@ select {
 		inset: 0 0 0 30%;
 		background-color: var(--off-white);
 		flex-direction: column;
-		padding: min(20rem, 15vh) 2rem;
+		padding: min(20rem, 15vh) 5rem;
 		margin: 0;
 	}
 }
@@ -382,7 +387,7 @@ select {
 			"four four four"
 			"five five five";
 
-		gap: 2em;
+		gap: var(--gap);
 	}
 
 	/*-------------------------------*/
@@ -405,14 +410,15 @@ select {
 	.bright-future-text-section {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 1em;
 		justify-content: space-between;
 		align-items: center;
+
+		padding-inline-end: 1em;
 	}
 
 	.bright-future-title {
-		font-size: var(--fs-700);
-		font-weight: var(--fw-700);
+		font-size: var(--fs-800);
+		font-weight: var(--fw-800);
 		line-height: 1.25em;
 	}
 
@@ -422,7 +428,7 @@ select {
 
 	.blog-section {
 		grid-template-columns: 1fr 1fr;
-		gap: 2em;
+		gap: var(--gap);
 	}
 
 	.thumbnail {
@@ -472,12 +478,15 @@ select {
 	.bright-future-text-section {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 2em;
+		gap: var(--gap);
 		justify-content: space-between;
 		align-items: center;
 	}
 
 	.bright-future-title {
+		font-size: var(--fs-900);
+		font-weight: var(--fw-800);
+		line-height: 1.25em;
 		padding-inline-end: 1.75em;
 		letter-spacing: 0.025em;
 	}
@@ -488,7 +497,7 @@ select {
 
 	.blog-section {
 		grid-template-columns: repeat(3, 1fr);
-		gap: 2em;
+		gap: var(--gap);
 	}
 
 	.thumbnail {
