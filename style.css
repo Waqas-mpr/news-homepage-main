@@ -183,7 +183,7 @@ select {
 /*------------------------------*/
 
 .header-section {
-	padding-block-start: 2em;
+	padding-block: 0.75em;
 }
 
 .logo > img {
