@@ -206,8 +206,8 @@ select {
 .btn:hover {
 	cursor: pointer;
 
-	/* filter: invert(41%) sepia(72%) saturate(2716%) hue-rotate(336deg)
-		brightness(117%) contrast(89%); */
+	filter: invert(41%) sepia(72%) saturate(2716%) hue-rotate(336deg)
+		brightness(117%) contrast(89%);
 }
 
 .btn > img {
@@ -530,13 +530,6 @@ select {
 			"three three four"
 			"five five five";
 	}
-
-	/* .header-aligned {
-		display: grid;
-		grid-template-columns: 48px 1fr;
-		justify-content: end;
-		asectionlign-items: center;
-	} */
 
 	/*-------------------------------*/
 	/*  Hero Section				*/
